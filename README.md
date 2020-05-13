@@ -36,7 +36,7 @@ This is version 2.0
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
 
-## Acknowledgments
+## Acknowledgements
 
 * Special thanks to the roundslider, math.js, fabric.js team for providing such great libraries with a lot of functionalities.
 
