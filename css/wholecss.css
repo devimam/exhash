@@ -1,0 +1,129 @@
+/*
+Title: Extendible Hashing Simulator
+Author: Mohammad Imam Hossain
+Date: 11/05/2020
+All rights reserved
+*/
+
+body{
+    background-color: #47476b;
+    background-image: url('../images/background1.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+}
+
+#mainbody{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+#mainbody>div.row{
+    min-height:100vh;
+}
+
+#leftside{
+    font-size: 120%;
+    color: #00ffcc;
+}
+
+.block{
+    text-align: center;
+}
+
+.block>div{
+    padding: 10px 0px;
+}
+
+/*heading part*/
+.block>div:nth-child(1){
+    padding:5px;
+    margin:0px;
+    border: 1px solid #ff6600;
+}
+
+.heading{
+    margin:0px;
+    padding: 2px;
+    text-align:center;
+}
+
+/*text fields*/
+.inputfield{
+    border: none;
+    border-bottom: 1px solid rgb(255, 51, 51);
+    background-color: transparent;
+    width:50%;
+    height: 25px;
+    color: rgb(26, 255, 102);
+    text-align:center;
+}
+
+input:focus{
+    outline: none;
+}
+
+input.mybtn{
+    background-color:transparent;
+    color: rgb(26, 255, 102);
+    min-width: 100px;
+    border: 1px solid rgb(255, 51, 51);
+    font-size: 80%;
+    padding: 3px;
+}
+
+input.mybtn:hover, input.mybtn:active{
+    background-color: #80ffff;
+    color: red;
+    font-weight: bold;
+}
+
+#fixmargin{
+    margin:0px;
+}
+
+#rightside{
+    overflow:auto;
+    padding: 10px;
+    height: 100vh;
+    display:none;
+}
+
+.copyright{
+    width: 100%;
+    text-align:center;
+    color: #00ffff;
+    position: fixed;
+    bottom: 0px;
+    z-index: 100;
+    margin:none;
+}
+
+/*slider styles*/
+#rslider .rs-range-color  {
+    background-color: #33B5E5;
+}
+#rslider .rs-path-color  {
+    background-color: #C2E9F7;
+}
+#rslider .rs-handle  {
+    background-color: #C2E9F7;
+    padding: 7px;
+    border: 2px solid #C2E9F7;
+}
+#rslider .rs-handle.rs-focus  {
+    border-color: #33B5E5;
+}
+#rslider .rs-handle:after  {
+    border-color: #33B5E5;
+    background-color: #33B5E5;
+}
+#rslider .rs-border  {
+    border-color: transparent;
+}
+
+.slider{
+    color:blue;
+    display: inline-block;
+    vertical-align:middle;
+}
