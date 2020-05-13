@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+    <head>
+        <!--meta section-->
+        <meta charset="UTF-8">
+        <meta name="author" content="Mohammad Imam Hossain">
+        <meta name="keywords" content="dynamic, extensible, extendible, hashing">
+        <meta name="description" content="A website to simulate how basic extendible hashing works, where you can tune the bucket size and hash function.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!--title section-->
+        <title>Extendible Hashing</title>
+        
+        <!--integrating my css stylesheet -->
+        <link rel="stylesheet" href="css/wholecss.css">
+        <link rel="icon" href="images/myicon.png">
+        
+        <!--adding necessary libraries-->
+        
+        <!--integrating bootstrap 3 scripts-->
+        <link rel="stylesheet" href="library/css/bootstrap.min.css">
+        <script src="library/js/jquery.min.js"></script>
+        <script src="library/js/bootstrap.min.js"></script>
+        
+        <!--linking round slider library scripts for ciruclar slider-->
+        <link rel="stylesheet" href="library/css/roundslider.min.css">
+        <script src="library/js/roundslider.min.js"></script>
+    </head>
+    
+    <body>
+        <div class="container-fluid" id="mainbody">
+        <div class="row">
+            <div id='leftside' class="col-sm-4 col-xs-12">
+                <div class="row block">
+                    <div class="col-xs-12">
+                        <h3 class="heading">Configuration</h3>
+                    </div>
+                    
+                    <div class='col-xs-12'>
+                        Maximum Value of Search Key<br/><div id="rslider" class="slider"></div>
+                        <script>
+                            $('#rslider').roundSlider({
+                                readOnly: false,
+                                radius: 40,
+                                width: 8,
+                                handleSize: "+14",
+                                handleShape: "dot",
+                                sliderType: "min-range",
+                                value: 10000,
+                                max: 100000,
+                                min: 0
+                            });
+                        </script>
+                    </div>
+                    
+                    <div class='col-xs-12'>
+                        Hash Function, h(k)<br/> = <input type="text" class="inputfield" id="hfn" value='k % 8' onkeyup="placeicon();">&nbsp;<span id='hashfn'></span>
+                    </div>
+                    <div class='col-xs-12'>
+                        Maximum Global Depth, k<br/> = <input type="text" class='inputfield' id="k" required="true" value='3' onkeyup='kvalidate();'>&nbsp;<span id='kval'></span>
+                    </div>
+                    <div class='col-xs-12'>
+                        No. of Records / Bucket, r<br/> = <input type="text" class='inputfield' id="rec" required="true" value='2' onkeyup='recvalidate();'>&nbsp;<span id='recval'></span>
+                    </div>
+                    <div class="col-xs-12">
+                        <input type="button" class='mybtn' id="st" onclick="start();" value="Lock" style="display:inline-block;"><input type="button" class='mybtn' id="clr" onclick="clearme();" value="Unlock" style="display:none;" disabled>
+                    </div>
+                        
+                </div>
+                
+                <div id="showme" style="display:none;">
+                    <div class="row block">
+                        <div class="col-xs-12">
+                            <h3 class='heading'>Simulation</h3>
+                        </div>
+                        <div class='col-xs-12'>
+                                Search Key Value<br/> = <input type="text" class='inputfield' onkeyup='skeyvalidity();' style='width:50%;' id="skey" required="true">&nbsp;<span id='validskeyicon'></span>
+                        </div>
+                        
+                        <div class='col-xs-12'>
+                                Hash Value, h(k) = <input type="text" class='inputfield' style='width:60px;border:none;' readonly id="hval" value='######'>
+                        </div>
+                        
+                        <div class='col-xs-12'>
+                                Binary form of h(k) = <span id="inconsider" style="color:red;"></span> <span id="tmpinconsider" style="color:rgb(255, 128, 0);"></span> <span id="noconsider" style="color:white;"></span>
+                        </div>
+                        
+                        <div class='col-xs-12'>
+                            <div class="row" id="fixmargin">
+                                <input type="button" class='mybtn' style="width:40%;float:left;" id="insert" onclick="insert();" value="Insert Key">
+                                <input type="button" class="mybtn" style="width:40%;float:right;" id="restart" onclick="reset();" value="Restart Simulation">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id='rightside' class="col-sm-8 col-xs-12">
+                <canvas id='drawingboard'></canvas>
+            </div>
+        </div>
+        </div>
+        
+        <!--footer-->
+        <div class="copyright">
+            MIT License &copy; 2020 <strong>Mohammad Imam Hossain</strong> | Email: <strong><a href="mailto:imambuet11@gmail.com" style="color:inherit;">imambuet11@gmail.com</a></strong> | All Rights Reserved
+        </div>
+
+        <!--adding necessary javascript files-->
+        <script src="library/js/fabric.js"></script>
+        <script src="library/js/math.min.js"></script>
+        <script src="js/wholejs.js"></script>
+    </body>
+</html>
