@@ -1,0 +1,87 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 15, 2019, 7:35:41 PM
+    Author     : imamb
+*/
+
+body{
+    margin:0px 15px;
+    background-image: url('../images/background.jpeg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#leftside{
+    border-collapse: collapse;
+    display:inline-block;
+    float:left;
+    overflow:auto;
+    background-color:rgba(0,20,51,0.7);
+}
+
+#rightside{
+    display:inline-block;
+    overflow:auto;
+    float:right;
+    background-color:rgba(0,20,51,0.7);
+}
+
+.block{
+    margin: 10px;
+    background-color:rgba(255,119,51,0.3);
+    color: white;
+    border-radius:15px;
+    text-align:center;
+    padding: 0px 0px 10px;
+}
+
+.block:hover{
+    box-shadow: 2px 2px 5px 2px black;
+}
+
+.heading{
+    border: 1px solid yellow;
+    border-radius: 15px;
+    text-align:center;
+}
+
+.inputfield{
+    border:none;
+    border-bottom: 1px solid blue;
+    background-color: rgba(0,0,0,0);
+    width:50%;
+    height: 25px;
+    color: rgb(26, 255, 102);
+    text-align:center;
+}
+
+.mybtn{
+    margin: 10px;
+    border: 1px solid rgb(255, 51, 51);
+    height: 30px;
+    width: 130px;
+    background-color:rgba(0,0,0,0);
+    color: rgb(26, 255, 102);
+    font-size: 130%;
+    border-radius: 15px;
+}
+
+.mybtn:hover{
+    background-color:rgba(0,0,0,0.5);
+    box-shadow: 2px 2px 5px 2px black;
+}
+
+.copyright{
+    width: 100%;
+    text-align:center;
+    color: rgb(255, 102, 0);
+    position: fixed;
+    bottom: 0px;
+    z-index: 100;
+    margin:none;
+}

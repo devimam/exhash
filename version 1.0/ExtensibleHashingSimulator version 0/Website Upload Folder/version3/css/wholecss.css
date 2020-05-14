@@ -1,0 +1,118 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 15, 2019, 7:35:41 PM
+    Author     : imamb
+*/
+
+body{
+    margin:0px 15px;
+    background-image: url('../images/background.jpeg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#leftside{
+    border-collapse: collapse;
+    display:inline-block;
+    float:left;
+    overflow-y:auto;
+    overflow-x:hidden;
+    background-color:rgba(0,20,51,0.7);
+}
+
+#rightside{
+    display:inline-block;
+    overflow-y:auto;
+    overflow-x:hidden;
+    float:right;
+    background-color:rgba(0,20,51,0.7);
+}
+
+.block{
+    margin: 10px;
+    background-color:rgba(255,119,51,0.3);
+    border-radius:15px;
+    text-align:center;
+    padding: 0px 0px 10px;
+    color: white;
+}
+
+.block:hover{
+    box-shadow: 2px 2px 5px 2px black;
+}
+
+.heading{
+    border: 1px solid yellow;
+    border-radius: 15px;
+    text-align:center;
+    color: white;
+}
+
+.inputfield{
+    border:none;
+    border-bottom: 1px solid #ff6600;
+    background-color: rgba(0,0,0,0);
+    width:50%;
+    height: 25px;
+    color: rgb(26, 255, 102);
+    text-align:center;
+}
+
+#rslider .rs-range-color  {
+    background-color: #33B5E5;
+}
+#rslider .rs-path-color  {
+    background-color: #C2E9F7;
+}
+#rslider .rs-handle  {
+    background-color: #C2E9F7;
+    padding: 7px;
+    border: 2px solid #C2E9F7;
+}
+#rslider .rs-handle.rs-focus  {
+    border-color: #33B5E5;
+}
+#rslider .rs-handle:after  {
+    border-color: #33B5E5;
+    background-color: #33B5E5;
+}
+#rslider .rs-border  {
+    border-color: transparent;
+}
+
+.slider{
+    color:blue;
+    display: inline-block;
+    vertical-align:middle;
+}
+
+.mybtn{
+    margin: 10px;
+    border: 1px solid rgb(255, 51, 51);
+    height: 30px;
+    width: 130px;
+    background-color:rgba(0,0,0,0);
+    color: rgb(26, 255, 102);
+    font-size: 130%;
+    border-radius: 15px;
+}
+
+.mybtn:hover{
+    background-color:rgba(0,0,0,0.5);
+    box-shadow: 2px 2px 5px 2px black;
+}
+
+.copyright{
+    width: 100%;
+    text-align:center;
+    color: rgb(255, 102, 0);
+    position: fixed;
+    bottom: 0px;
+    z-index: 100;
+    margin:none;
+}

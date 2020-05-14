@@ -1,0 +1,118 @@
+.InputSliderRange{
+  position: relative;
+  &-Scale{
+    height: 4px;
+    background: #ccc;
+    position: absolute;
+    width: 100%;
+    cursor: pointer;
+  }
+  &-Goto{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  &-Fill{
+    height: 100%;
+    width: 0;
+    background: #37aeb2;
+  }
+  &-Handler{
+    width: 30px;
+    height: 30px;
+    border-radius: 100px;
+    background-color: #fff;
+    box-shadow: 0 2px 3px 0 rgba(18, 41, 62, 0.4);
+    border: solid 4px #37aeb2;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -15px;
+    margin-left: -15px;
+    z-index: 2;
+    cursor: grab;
+    /*
+    &:hover{
+      cursor: pointer;
+    }
+    &.do_move:hover {
+      cursor: grabbing;
+    }
+    */
+  }
+  &-Grid{
+    position: relative;
+    height: 24px;
+    margin-top: 10px;
+  }
+  &-Label{
+    font-size: 12px;
+    line-height: 1em;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    &_position_last{
+      left: 100%;
+    }
+  }
+  &-WrapInput{
+    position: relative;
+  }
+  &-Placeholder{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+  }
+  &-Thumb{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 40px;
+    &Info{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate3d(-50%, -50%, 0);
+    }
+  }
+  &-Input{
+    width: 100%;
+  }
+  &.dragged{
+    .InputSliderRange-Handler{
+      cursor: grabbing;
+    }
+  }
+}
+.InputSliderRange_disabled{
+  .InputSliderRange-Input{
+    background-color: #e9ebed;
+  }
+  .InputSliderRange-Scale, .InputSliderRange-Goto, .InputSliderRange-Fill{
+    display: none;
+  }
+}
+.InputSliderRange_grid_inwardly{
+  .InputSliderRange-Label_position_first{
+    transform: translateX(0);
+  }
+  .InputSliderRange-Label_position_last{
+    transform: translateX(-100%);
+  }
+}
+@media all and (max-width: 960px) {
+  .InputSliderRange-Label_position_first{
+    transform: translateX(0);
+  }
+  .InputSliderRange-Label_position_last{
+    transform: translateX(-100%);
+  }
+}
