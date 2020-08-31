@@ -12,10 +12,6 @@
         <!--title section-->
         <title>Extendible Hashing</title>
         
-        <!--integrating my css stylesheet -->
-        <link rel="stylesheet" href="css/wholecss.css">
-        <link rel="icon" href="images/myicon.png">
-        
         <!--adding necessary libraries-->
         
         <!--integrating bootstrap 3 scripts-->
@@ -26,6 +22,10 @@
         <!--linking round slider library scripts for ciruclar slider-->
         <link rel="stylesheet" href="library/css/roundslider.min.css">
         <script src="library/js/roundslider.min.js"></script>
+		
+		<!--integrating my css stylesheet -->
+        <link rel="stylesheet" href="css/wholecss.css">
+        <link rel="icon" href="images/myicon.png">
     </head>
     
     <body>
@@ -34,24 +34,36 @@
             <div id='leftside' class="col-sm-4 col-xs-12">
                 <div class="row block">
                     <div class="col-xs-12">
-                        <h3 class="heading">Configuration <a href="https://www.youtube.com/watch?v=ilalf3MefL0" target="_blank" title="How to use" style="color:inherit;float:right;"><span class="glyphicon glyphicon-question-sign"></span></a></h3>
+                        <h3 class="heading">
+							Configuration
+						</h3>
                     </div>
                     
                     <div class='col-xs-12'>
-                        Maximum Value of Search Key<br/><div id="rslider" class="slider"></div>
-                        <script>
-                            $('#rslider').roundSlider({
-                                readOnly: false,
-                                radius: 40,
-                                width: 8,
-                                handleSize: "+14",
-                                handleShape: "dot",
-                                sliderType: "min-range",
-                                value: 10000,
-                                max: 100000,
-                                min: 0
-                            });
-                        </script>
+						<div>
+							<iframe src="https://ghbtns.com/github-btn.html?user=devimam&repo=exhash&type=star&count=true&size=large" 
+							frameborder="0" scrolling="0" width="110" height="30" title="Star this project" style="float:left;"></iframe>
+							
+							<a href="https://www.youtube.com/watch?v=ilalf3MefL0" target="_blank" title="How to use" style="color:inherit;float:right;">
+								<span class="glyphicon glyphicon-question-sign" style="font-size: 130%;"></span>
+							</a>
+						</div>
+						<div style="clear:both;">
+							Maximum Value of Search Key<br/><div id="rslider" class="slider"></div>
+							<script>
+								$('#rslider').roundSlider({
+									readOnly: false,
+									radius: 40,
+									width: 8,
+									handleSize: "+14",
+									handleShape: "dot",
+									sliderType: "min-range",
+									value: 10000,
+									max: 100000,
+									min: 0
+								});
+							</script>
+						</div>
                     </div>
                     
                     <div class='col-xs-12'>
