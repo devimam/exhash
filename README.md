@@ -26,7 +26,7 @@ No installation is required. To review how to use this website, just visit [here
 
 ## Versioning
 
-This is version 2.0
+This is version 3.0
 
 ## Authors
 
