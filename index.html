@@ -34,9 +34,7 @@
             <div id='leftside' class="col-sm-4 col-xs-12">
                 <div class="row block">
                     <div class="col-xs-12">
-                        <h3 class="heading">
-							Configuration
-						</h3>
+                        <h3 class="heading">Configuration</h3>
                     </div>
                     
                     <div class='col-xs-12'>
@@ -118,10 +116,35 @@
         <div class="copyright">
             MIT License &copy; 2020 <strong>Mohammad Imam Hossain</strong> | Email: <strong><a href="mailto:imambuet11@gmail.com" style="color:inherit;">imambuet11@gmail.com</a></strong> | All Rights Reserved
         </div>
+        
+        <!--introductory modal section-->
+          <div class="modal fade" id="intromodal" role="dialog">
+            <div class="modal-dialog">
+
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="heading">Extendible Hashing Simulator</h4>
+                </div>
+                <div class="modal-body">
+                    <strong>Hashing</strong> is a widely used technique for building indices in main memory. Hashing has also been used as a way of organizing records in a file.<br><br><strong>Static hashing</strong> becomes inefficient when we try to add large number of records within a fixed number of buckets and thus we need <strong>Dynamic hashing</strong> where the hash index can be rebuilt with an increased number of buckets.<br><br><strong>Extendible Hashing</strong> is a dynamic hashing method wherein array of pointers, and buckets are used to hash data.<br><br>Extendible hashing has some important advantages. Most significant is the fact that when looking for a record, we never need to search more than one data block. We also have to examine an entry of the bucket array, but if the bucket array is small enough to be kept in main memory, then there is no disk I/O needed to access the bucket array.   
+                    <br><br>
+                    <a href='https://www.slideshare.net/imamhossain75054/dbms-10-extensible-hashing-238408080'>How Extendible hashing works !!! </a>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
 
         <!--adding necessary javascript files-->
         <script src="library/js/fabric.js"></script>
         <script src="library/js/math.min.js"></script>
         <script src="js/wholejs.js"></script>
+        <script>
+            $('#intromodal').modal('show');
+        </script>
     </body>
 </html>
