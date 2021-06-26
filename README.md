@@ -4,7 +4,7 @@ The main purpose of this project is to create a simulator for Extendible Hash st
 
 ## Getting Started
 
-It's better to review the theory of Extendible hashing first before using this tool. To explore how Extendible Hashing works, just click [here](https://www.slideshare.net/imamhossain75054/extensible-hashing-228550728). 
+It's better to review the theory of Extendible hashing first before using this tool. To explore how Extendible Hashing works, just click [here](https://www.slideshare.net/imamhossain75054/dbms-10-extensible-hashing-238408080). 
 
 ### Prerequisites
 
