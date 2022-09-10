@@ -8,9 +8,9 @@ It's better to review the theory of Extendible hashing first before using this t
 
 ### Prerequisites
 
-You just need a browser to open this simulator. To start this simulator just click [here](https://devimam.github.io/exhash/).
+You just need a web browser to open this simulator. To start this simulator just click [here](https://devimam.github.io/exhash/).
 
-### Installing
+### Installation
 
 No installation is required. To review how to use this website, just visit [here](https://www.youtube.com/watch?v=ilalf3MefL0).
 
@@ -30,7 +30,7 @@ This is version 3.0
 
 ## Authors
 
-* **Mohammad Imam Hossain** - [LinkedIn](https://www.linkedin.com/in/mohammad-imam-hossain/)
+* **Mohammad Imam Hossain** - [LinkedIn](https://www.linkedin.com/in/mohammad-imam/)
 
 ## License
 
